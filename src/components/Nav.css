@@ -1,0 +1,23 @@
+nav {
+  background: dodgerblue;
+  height: 70px;
+}
+
+nav ul {
+  color: black;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  height: 100%;
+}
+
+li {
+  margin: 16px;
+  color: aliceblue;
+}
+a {
+  text-decoration: none;
+}

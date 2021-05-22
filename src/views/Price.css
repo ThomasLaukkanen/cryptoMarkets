@@ -1,0 +1,54 @@
+.priceWrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+}
+
+.listItem {
+  padding: 16px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  margin: 16px;
+  width: 300px;
+  min-height: 160px;
+  position: relative;
+}
+
+h1 {
+  margin: 32px;
+  color: dodgerblue;
+  font-size: 4.768rem;
+}
+.containerPrices {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.listItem > h3 {
+  color: dodgerblue;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+.listItem > h3::first-letter {
+  font-size: 200%;
+  color: #2b7ae2;
+  font-variant: small-caps;
+}
+.tokenImg {
+  position: absolute;
+  height: 42px;
+  width: 42px;
+  right: 32px;
+}
+p {
+  line-height: 1.7;
+  font-size: 1rem;
+}
