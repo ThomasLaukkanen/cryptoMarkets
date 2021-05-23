@@ -4,6 +4,7 @@ function Nav() {
   return (
     <nav>
       <ul>
+        <h2>CryptoMarkets 🚀 </h2>
         <Link to="/home">
           <li>Home</li>
         </Link>

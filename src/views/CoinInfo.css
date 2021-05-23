@@ -1,0 +1,19 @@
+.coinWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.coinInfo {
+  max-width: 800px;
+  margin-top: 32px;
+  position: relative;
+}
+.coinInfo h1 {
+  margin: 0;
+}
+.coinInfo img {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}

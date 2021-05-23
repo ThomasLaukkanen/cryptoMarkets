@@ -2,6 +2,7 @@ import './App.css'
 import Home from './views/Home'
 import Price from './views/Price'
 import Nav from './components/Nav'
+import CoinInfo from './views/CoinInfo'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
         <Switch>
           <Route path="/home" component={Home} />
           <Route path="/" exact component={Home} />
-          <Route path="/price" component={Price} />
+          <Route path="/price" component={Price} exact />
+          <Route path="/price/:id" component={CoinInfo} />
         </Switch>
       </Router>
     </div>

@@ -23,6 +23,9 @@ h1 {
   margin: 32px;
   color: dodgerblue;
   font-size: 4.768rem;
+  background: -webkit-linear-gradient(rgb(8, 12, 255), rgb(13, 166, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .containerPrices {
   width: 100%;
@@ -32,12 +35,12 @@ h1 {
   align-items: center;
   text-align: left;
 }
-.listItem > h3 {
+h3 {
   color: dodgerblue;
   font-size: 1.25rem;
   line-height: 1;
 }
-.listItem > h3::first-letter {
+h3::first-letter {
   font-size: 200%;
   color: #2b7ae2;
   font-variant: small-caps;
@@ -46,9 +49,15 @@ h1 {
   position: absolute;
   height: 42px;
   width: 42px;
-  right: 32px;
+  right: 16px;
 }
 p {
   line-height: 1.7;
   font-size: 1rem;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
 }
