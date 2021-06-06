@@ -41,7 +41,9 @@ function Price() {
               Change from Ath{' '}
               <span
                 className={
-                  item.ath_change_percentage[0] === '+' ? 'green' : 'red'
+                  item.ath_change_percentage.toString()[0] === '+'
+                    ? 'green'
+                    : 'red'
                 }
               >
                 <strong>{item.ath_change_percentage} % </strong>
