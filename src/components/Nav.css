@@ -28,9 +28,13 @@ nav ul {
 li {
   margin: 16px;
   color: aliceblue;
+  transition: color 0.2s ease;
 }
 a {
   text-decoration: none;
+}
+li:hover {
+  color: red;
 }
 nav h2 {
   position: absolute;

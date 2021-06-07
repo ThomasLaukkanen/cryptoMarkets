@@ -16,6 +16,9 @@ function Price() {
     console.log(items)
     setItems(items)
   }
+  function checkString(input) {
+    return input.toString()[0] !== '-' ? 'green' : 'red'
+  }
 
   return (
     <div className="priceWrapper">
@@ -39,23 +42,13 @@ function Price() {
             </p>
             <p>
               Change from Ath{' '}
-              <span
-                className={
-                  item.ath_change_percentage.toString()[0] === '+'
-                    ? 'green'
-                    : 'red'
-                }
-              >
+              <span className={checkString(item.ath_change_percentage)}>
                 <strong>{item.ath_change_percentage} % </strong>
               </span>
             </p>
             <p>
               Price change 24h:{' '}
-              <span
-                className={
-                  item.price_change_percentage_24h === '+' ? 'green' : 'red'
-                }
-              >
+              <span className={checkString(item.price_change_percentage_24h)}>
                 {item.price_change_percentage_24h}
               </span>
             </p>
